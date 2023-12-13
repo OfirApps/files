@@ -2,7 +2,7 @@
 <browserconfig>
     <msapplication>
         <tile>
-            <square150x150logo src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/mstile-150x150.png"/>
+            <square150x150logo src="https://cdn.jsdelivr.net/gh/OfirApps/files@9caf6c67405c13bd622b3e9065ff2ecd53fbdad5/favicon/favicon-150x150.png"/>
             <TileColor>#ffffff</TileColor>
         </tile>
     </msapplication>

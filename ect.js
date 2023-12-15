@@ -1,18 +1,1 @@
-console.warn('כל התוכן מוגן בזכויות יוצרים')
-
-var styles = `
-    * {
-        direction:rtl;
-    }
-    #l_main {
-        padding-left: 16px;
-    }
-`
-
-var styleSheet = document.createElement("style")
-styleSheet.innerText = styles
-document.head.appendChild(styleSheet)
-
-function scrolltobodyMainPage() {
-    document.querySelector("div#safearea").scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
-}
+const elements=document.querySelectorAll("#full > div.cover-body > div.bottom > div > div > a > img");elements.forEach((e,o)=>{const t=`מטוס`;1===o?t="טלפון סלולרי":2===o?t="חץ המופנה כלפי מטה":3===o?t="עיתון":4===o&&(t="כוכב"),e.alt=t;e.width="40px";e.height="40px;"});

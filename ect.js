@@ -1,1 +1,23 @@
-const elements=document.querySelectorAll("#full > div.cover-body > div.bottom > div > div > a > img");elements.forEach((e,o)=>{const t=`מטוס`;1===o?t="טלפון סלולרי":2===o?t="חץ המופנה כלפי מטה":3===o?t="עיתון":4===o&&(t="כוכב"),e.alt=t;e.width="40px";e.height="40px;"});
+console.warn('כל התוכן מוגן בזכויות יוצרים')
+
+function scrolltobodyMainPage() {
+    document.querySelector("div#safearea").scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+}
+
+const elements = document.querySelectorAll("#full > div.cover-body > div.bottom > div > div > a > img");
+
+elements.forEach((e, index) => {
+ const alt = `מטוס`;
+ if (index === 1) {
+   alt = "טלפון סלולרי";
+ } else if (index === 2) {
+   alt = "חץ המופנה כלפי מטה";
+ } else if (index === 3) {
+   alt = "עיתון";
+ } else if (index === 4) {
+   alt = "כוכב";
+ }
+ e.alt = alt;
+ e.width="40px";
+ e.height="40px;"
+});

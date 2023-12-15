@@ -6,7 +6,7 @@ function scrolltobodyMainPage() {
 
 const elements = document.querySelectorAll("#full > div.cover-body > div.bottom > div > div > a > img");
 
-elements.forEach((element, index) => {
+elements.forEach((e, index) => {
  const alt = `מטוס`;
  if (index === 1) {
    alt = "טלפון סלולרי";
@@ -17,6 +17,7 @@ elements.forEach((element, index) => {
  } else if (index === 4) {
    alt = "כוכב";
  }
- 
- element.alt = alt;
+ e.alt = alt;
+ e.width="40px";
+ e.height="40px;"
 });

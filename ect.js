@@ -18,6 +18,4 @@ alt = `מטוס`;
    alt = "כוכב";
  }
  e.alt = alt;
- e.width="40px";
- e.height="40px;"
 });

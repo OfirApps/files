@@ -7,7 +7,7 @@ function scrolltobodyMainPage() {
 const elements = document.querySelectorAll("#full > div.cover-body > div.bottom > div > div > a > img");
 
 elements.forEach((e, index) => {
- const alt = `מטוס`;
+alt = `מטוס`;
  if (index === 1) {
    alt = "טלפון סלולרי";
  } else if (index === 2) {

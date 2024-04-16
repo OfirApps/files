@@ -17,5 +17,5 @@ function gokyliego() {
     setTimeout(()=>{el.style.filter = "brightness(0.5) saturate(100%) invert(15%) sepia(100%) saturate(7045%) hue-rotate(12deg) brightness(96%) contrast(110%)"},500)
     setTimeout(() => {el.style.top = `${Math.random() * 80 + 10}vh`; el.style.right = `${Math.random() * 70 + 20}vw`;}, 1300)
     setTimeout(() => {el.style.opacity = 0;}, 2300); //fade out after 2 seconds of flying around
-    setTimeout(() => {el.classList.remove("fly-animation"); el.style.top = ''; el.style.right = ''; el.style.transform = ''; el.style.position = ''; el.style.opacity = 1; el.style.filter = ''}, 3300); //remove the animation after 2 seconds
+    setTimeout(() => {el.classList.remove("fly-animation"); el.style.top = ''; el.style.right = ''; el.style.transform = ''; el.style.position = ''; el.style.opacity = ''; el.style.filter = ''}, 3300); //remove the animation after 2 seconds
 }

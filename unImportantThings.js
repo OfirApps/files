@@ -12,7 +12,7 @@ function gokyliego() {
     el.classList.add("fly-animation");
     el.style.transform = `rotate3D(${Math.random() * -50},${Math.random() * -50},${Math.random() * -50},${Math.random() * 330 + 30}deg)`;
     el.style.position = `absolute`;
-    el.style.right = `calc(100vw - (el.style.width || el.offestWidth))`; 
+    el.style.right = `calc(100vw - (el.getBoundingClientRect().width + 15 + 'px'))`; 
     el.style.top = `1rem`;
     setTimeout(()=>{el.style.filter = "brightness(0.5) saturate(100%) invert(15%) sepia(100%) saturate(7045%) hue-rotate(12deg) brightness(96%) contrast(110%)"},500)
     setTimeout(() => {el.style.top = `${Math.random() * 80 + 10}vh`; el.style.right = `${Math.random() * 70 + 20}vw`;}, 1300)

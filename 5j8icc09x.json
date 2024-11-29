@@ -2215,6 +2215,8 @@
       "type": "symbol",
       "source": "openmaptiles",
       "source-layer": "poi",
+      "minzoom": 0,
+      "maxzoom": 24,
       "filter": [
         "match",
         ["get", "class"],
@@ -2235,7 +2237,13 @@
         "text-font": ["Noto Sans Italic"],
         "text-max-width": 9,
         "text-offset": [0.9, 0],
-        "text-size": 12
+        "text-size": 12,
+        "text-allow-overlap": false,
+        "icon-allow-overlap": true,
+        "text-ignore-placement": false,
+        "icon-ignore-placement": false,
+        "text-pitch-alignment": "auto",
+        "text-optional": true
       },
       "paint": {
         "text-color": "#2e5a80",
